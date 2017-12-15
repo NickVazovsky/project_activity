@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма для парсинга</title>
+</head>
+<body>
+    <form action="{% url 'form' %}" method="post">{% csrf_token %}
+        {{ form }}
+        <br/>
+        <button type="submit">Отправить</button>
+    </form>
+</body>
+</html>
